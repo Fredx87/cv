@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "parcel-mdx",
+  "name": "gianluca-frediani-cv",
   "version": "1.0.0",
   "scripts": {
     "start": "parcel index.html --no-cache"
@@ -8,6 +8,8 @@
   "dependencies": {
     "@mdx-js/react": "^1.5.1",
     "@mdx-js/tag": "^0.20.3",
+    "@types/react": "^16.9.12",
+    "@types/react-dom": "^16.9.4",
     "react": "^16.x",
     "react-dom": "^16.9.0"
   },
@@ -16,6 +18,7 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@mdx-js/parcel-plugin-mdx": "^1.5.1",
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.7.2"
   }
 }
