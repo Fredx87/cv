@@ -1,0 +1,91 @@
+@import url("../node_modules/sakura.css/css/sakura.css");
+
+body {
+  -webkit-print-color-adjust: exact;
+  font-family: "Roboto Slab", serif;
+  max-width: 210mm;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  padding: 0;
+  color: #323b3c;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lato", sans-serif;
+  color: #516163;
+}
+
+h1,
+h2 {
+  padding: 0.3rem 0;
+  margin: 1.5rem 0;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin: 1rem 0;
+}
+
+h4 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+h1 {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #000000;
+  letter-spacing: 2;
+}
+
+h1 small {
+  font-variant: small-caps;
+  font-size: 0.8em;
+  color: #999999;
+}
+
+h2 {
+  border-bottom: 1px solid #cce8e5;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+a {
+  color: #516163;
+  text-decoration: underline solid #cce8e5;
+  font-weight: bold;
+}
+
+a:hover {
+  background: #cce8e5;
+  color: #516163;
+  border: 0;
+}
+
+ul {
+  margin: 1rem 0;
+  padding-left: 2em;
+}
+
+ul li {
+  margin: 0rem 0;
+}
+
+.contact-infos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1.5rem;
+}
+
+img.emoji {
+  width: 2rem;
+  vertical-align: text-top;
+  margin-right: 0.5rem;
+}
