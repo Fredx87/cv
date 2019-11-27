@@ -1,11 +1,14 @@
 import { CvExperience } from "./components/CvExperience";
+import { CvHeader} from "./components/CvHeader";
+import photo from "./assets/photo.jpg"
 
-# <span>Gianluca Frediani</span> <small>Curriculum Vitae</small>
-
-<div class="contact-infos">
-  <span> 📌 Milan, Italy</span>
-  <span> ✉️ <a href="mailto:gianluca.frediani@outlook.com">gianluca.frediani@outlook.com</a></span> 
-</div>
+<CvHeader
+  photoUrl={photo}
+  name="Gianluca Frediani"
+  email="gianluca.frediani@outlook.com"
+  phoneNumber="+39 3391442031"
+  place="Milan, Italy"
+></CvHeader>
 
 ## About me
 

@@ -34,21 +34,6 @@ h4 {
   margin: 1rem 0;
 }
 
-h1 {
-  margin-top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  border-bottom: 1px solid #000000;
-  letter-spacing: 2;
-}
-
-h1 small {
-  font-variant: small-caps;
-  font-size: 0.8em;
-  color: #999999;
-}
-
 h2 {
   border-bottom: 1px solid #cce8e5;
 }
@@ -76,12 +61,6 @@ ul {
 
 ul li {
   margin: 0rem 0;
-}
-
-.contact-infos {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -1.5rem;
 }
 
 img.emoji {
