@@ -12,12 +12,13 @@ export interface CvHeaderProps {
 
 const Container = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 const Photo = styled.img`
   border-radius: 100%;
-  width: 30mm;
-  height: 30mm;
+  width: 10rem;
+  height: 10rem;
   margin-right: 1rem;
 `;
 
@@ -28,7 +29,6 @@ const Right = styled.div`
     justify-content: space-between;
     align-items: baseline;
     border-bottom: 1px solid #000000;
-    letter-spacing: 2;
     padding: 1.15rem 0;
     margin: 0;
   }
@@ -44,6 +44,10 @@ const InfoContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 1.15rem 0;
+
+  span {
+    margin-right: 1rem;
+  }
 `;
 
 function getEmailLink(email: string) {

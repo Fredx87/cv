@@ -28,8 +28,8 @@ const Container = styled.div`
 `;
 
 const Side = styled.div`
-  flex: 0 20rem;
-  margin-right: 2rem;
+  flex: 0 18rem;
+  margin-right: 1.5rem;
 `;
 
 const Content = styled.div`
