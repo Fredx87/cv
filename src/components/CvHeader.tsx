@@ -29,7 +29,7 @@ const Right = styled.div`
     justify-content: space-between;
     align-items: baseline;
     border-bottom: 1px solid #000000;
-    padding: 1.15rem 0;
+    padding: 0.5rem 0;
     margin: 0;
   }
 
@@ -41,13 +41,7 @@ const Right = styled.div`
 `;
 
 const InfoContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 1.15rem 0;
-
-  span {
-    margin-right: 1rem;
-  }
+  padding: 0.5rem 0;
 `;
 
 function getEmailLink(email: string) {
@@ -65,9 +59,9 @@ export function CvHeader(props: CvHeaderProps) {
           <small>Curriculum Vitae</small>
         </h1>
         <InfoContainer>
-          {props.place ? <span> 📌 {props.place}</span> : null}
-          {props.phoneNumber ? <span>📞 {props.phoneNumber} </span> : null}
-          {props.email ? <span> ✉️ {getEmailLink(props.email)}</span> : null}
+          {props.place ? <div> 📌 {props.place}</div> : null}
+          {props.phoneNumber ? <div>📞 {props.phoneNumber} </div> : null}
+          {props.email ? <div> ✉️ {getEmailLink(props.email)}</div> : null}
         </InfoContainer>
       </Right>
     </Container>
