@@ -1,5 +1,5 @@
-import { CvExperience } from "./components/CvExperience";
 import { CvHeader} from "./components/CvHeader";
+import { Box, Flex } from "theme-ui";
 import photo from "./assets/photo.jpg"
 
 <CvHeader
@@ -29,7 +29,17 @@ I try to continuously improve my knowledge, exploring new ways of doing things, 
 
 ## Work experience
 
-<CvExperience type="work" start="Jul 2014" end="present" company="Kalpa s.r.l." place="Milan, Italy">
+<Flex>
+
+<Box>
+
+- 📅 Jul 2014 &ndash; present
+- 🏢 [Kalpa s.r.l](https://www.kalpa.it/)
+- 📌 Milan, Italy
+
+</Box>
+
+<Box sx={{ flex: 1 }}>
 
 ### Software Engineer / Team Leader
 
@@ -50,33 +60,71 @@ In addition to previous responsibilities:
 - Direct contact with clients for gathering requirements and designing solutions
 - Developing desktop applications (C++/Qt)
 
-</CvExperience>
+</Box>
 
-<CvExperience type="work" start="Dec 2013" end="Jun 2014" company="STMicroelectronics" place="Milan, Italy">
+</Flex>
+
+<Flex>
+
+<Box>
+
+- 📅 Dec 2013 &ndash; Jun 2014
+- 🏢 [STMicroelectronics](https://www.st.com/)
+- 📌 Milan, Italy
+
+</Box>
+
+<Box sx={{ flex: 1 }}>
 
 ### C++ Developer
 
 Analysis and development of Computer Vision algorithms for embedded systems using C++, especially in the field of Structure from Motion and Feature Matching
 
-</CvExperience>
+</Box>
+
+</Flex>
 
 ## Education
 
-<CvExperience type="university" start="Oct 2010" end="Jul 2013" university="University of Milan" finalMark="110/110">
+<Flex>
+
+<Box>
+
+- 📅 Oct 2010 &ndash; Jul 2013
+- 🎓 University of Milan
+- 📜 Final mark: 110/110
+
+</Box>
+
+<Box sx={{ flex: 1 }}>
 
 ### Master's Degree, Computer Science
 
 Thesis title: “Analysis, design and development of a system of traffic lights recognition on mobile platform”
 
-</CvExperience>
+</Box>
 
-<CvExperience type="university" start="Oct 2006" end="Apr 2010" university="University of Milan" finalMark="108/110">
+</Flex>
+
+<Flex>
+
+<Box>
+
+- 📅 Oct 2006 &ndash; Apr 2010
+- 🎓 University of Milan
+- 📜 Final mark: 108/110
+
+</Box>
+
+<Box sx={{ flex: 1 }}>
 
 ### Bachelor's Degree, Computer Science
 
 Thesis title: “Design and development of a web application for navigate and query RDF annotated resources”
 
-</CvExperience>
+</Box>
+
+</Flex>
 
 ## Open Source projects
 
