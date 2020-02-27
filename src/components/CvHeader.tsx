@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Avatar, Box, Flex, jsx } from "theme-ui";
+import { Avatar, Box, Flex, jsx, Styled } from "theme-ui";
 
 export interface CvHeaderProps {
   photoUrl: string;
@@ -17,14 +17,28 @@ function getEmailLink(email: string) {
 
 export function CvHeader(props: CvHeaderProps) {
   return (
-    <Flex>
-      <Avatar src={props.photoUrl}></Avatar>
+    <Flex sx={{ mb: 3, alignItems: "center" }}>
+      <Avatar src={props.photoUrl} sx={{ mr: 3 }}></Avatar>
       <Box sx={{ flex: 1 }}>
-        <h1>
-          {props.name}
-          <small>Curriculum Vitae</small>
-        </h1>
-        <Box>
+        <Styled.h1
+          sx={{
+            pt: 2,
+            pb: 1,
+            my: 0,
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "baseline",
+            borderBottom: "1px solid #999"
+          }}
+        >
+          {props.name}{" "}
+          <small
+            sx={{ fontSize: 3, fontVariant: "small-caps", color: "muted" }}
+          >
+            Curriculum Vitae
+          </small>
+        </Styled.h1>
+        <Box sx={{ mt: 1 }}>
           {props.place ? <div> 📌 {props.place}</div> : null}
           {props.phoneNumber ? <div>📞 {props.phoneNumber} </div> : null}
           {props.email ? <div> ✉️ {getEmailLink(props.email)}</div> : null}
