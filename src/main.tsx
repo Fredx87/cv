@@ -11,7 +11,7 @@ import fairyGates from "typography-theme-fairy-gates";
 import Content from "./cv.mdx";
 
 fairyGates.baseFontSize = "16px";
-fairyGates.blockMarginBottom = 0.8;
+fairyGates.blockMarginBottom = 0.6;
 
 const theme = merge(toTheme(fairyGates), {
   colors: {
@@ -22,11 +22,15 @@ const theme = merge(toTheme(fairyGates), {
   },
   styles: {
     root: {
+      "-webkit-print-color-adjust": "exact",
       maxWidth: "170mm",
       margin: "0 auto"
     },
     a: {
       color: "primary"
+    },
+    h2: {
+      mt: 4
     }
   },
   images: {
