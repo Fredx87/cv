@@ -11,6 +11,7 @@ import fairyGates from "typography-theme-fairy-gates";
 import Content from "./cv.mdx";
 
 fairyGates.baseFontSize = "16px";
+fairyGates.blockMarginBottom = 0.8;
 
 const theme = merge(toTheme(fairyGates), {
   colors: {
