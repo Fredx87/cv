@@ -24,6 +24,9 @@ const theme = merge(toTheme(fairyGates), {
     root: {
       maxWidth: "170mm",
       margin: "0 auto"
+    },
+    a: {
+      color: "primary"
     }
   },
   images: {

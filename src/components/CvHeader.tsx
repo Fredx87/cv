@@ -12,7 +12,7 @@ export interface CvHeaderProps {
 
 function getEmailLink(email: string) {
   const link = `mailto:${email}`;
-  return <a href={link}>{email}</a>;
+  return <Styled.a href={link}>{email}</Styled.a>;
 }
 
 export function CvHeader(props: CvHeaderProps) {
