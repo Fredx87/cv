@@ -23,7 +23,7 @@ const theme = merge(toTheme(fairyGates), {
   styles: {
     root: {
       "-webkit-print-color-adjust": "exact",
-      maxWidth: "170mm",
+      maxWidth: "168mm",
       margin: "0 auto"
     },
     a: {
