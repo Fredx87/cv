@@ -50,7 +50,7 @@ render(
         img.emoji {
           width: 1rem;
           vertical-align: text-top;
-          margin-right: 0.5rem;
+          margin-right: 0.25rem;
         }
       `}
     >

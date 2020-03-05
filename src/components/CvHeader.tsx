@@ -28,7 +28,9 @@ export const CvHeader: React.FC<CvHeaderProps> = props => (
       </Styled.h1>
       <Box
         sx={{
-          mt: 1,
+          mt: 2,
+          display: "flex",
+          justifyContent: "space-between",
           "& > ul": { listStyleType: "none", ml: 0 },
           "& > ul > li": { my: 0 }
         }}

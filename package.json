@@ -9,6 +9,10 @@
     "build:pdf": "npm run build:html && ts-node ./scripts/generate-pdf.ts"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "@mdx-js/react": "^1.5.7",
     "@mdx-js/tag": "^0.20.3",
     "@theme-ui/typography": "^0.3.0",
