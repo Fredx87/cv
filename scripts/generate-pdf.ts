@@ -3,11 +3,11 @@ import { getPdfFileName } from "./utils";
 
 async function generatePdf() {
   console.log("Generating PDF...");
-  const htmlPath = `${__dirname}/../dist/index.html`;
+  const url = `http://localhost:1234`;
   const pdfPath = `${__dirname}/../dist/${getPdfFileName()}`;
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto(`file://${htmlPath}`, { waitUntil: "networkidle2" });
+  await page.goto(url, { waitUntil: "networkidle2" });
   await page.emulateMediaType("screen");
   await page.pdf({
     path: pdfPath,
